@@ -18,27 +18,27 @@
 <body>
     <header>
     <section>
-        <div class="container page-header">
+        <div class="container header">
     <a class="logo" href="">Web<span class="logo-color-top">Studio</span></a>
     <nav>
          <ul class="site-nav">
-            <li class="item"><a href="" class="link accent">Студия</a></li>
-            <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
+            <li class="site-nav__item"><a href="" class="site-nav__link site-nav__link--accent">Студия</a></li>
+            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+            <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
          </ul>
     </nav>
         <ul class="contacts-style">
-            <li class="item ">
+            <li class="contacts-style__item ">
                 <a href="mailto:info@devstudio.com" class="contacts">
-                    <svg class="mail">
+                    <svg class="contacts__mail">
                         <use href="./images/symbol-defs.svg#icon-mail"></use>
                     </svg>
                     info@devstudio.com
                 </a> 
             </li>
-            <li class="item ">
+            <li class="contacts-style__item ">
                 <a href="tel:+380961111111" class="contacts">
-                    <svg class="phone">
+                    <svg class="contacts__phone">
                         <use href="./images/symbol-defs.svg#icon-phone"></use>
                     </svg>
                     +38 096 111 11 11
@@ -51,54 +51,54 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1 class="main-header"> Эффективные решения для вашего бизнеса</h1>
-            <button data-modal-open type="button" class="main-button">Заказать улугу</button>
+                <h1 class="hero__header"> Эффективные решения для вашего бизнеса</h1>
+            <button data-modal-open type="button" class="hero__button">Заказать улугу</button>
             </div>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                    <button data-modal-close type="button" class="button">
-                        <svg class="icon-close">
+                    <button data-modal-close type="button" class="modal__button">
+                        <svg class="modal__icon-close">
                             <use href="./images/symbol-defs.svg#icon-close"></use>
                         </svg>
                     </button>
-                    <h3 class="modal-tittle">Оставьте свои данные, мы вам перезвоним</h3>
+                    <h3 class="modal__tittle">Оставьте свои данные, мы вам перезвоним</h3>
                   <form class="form" name="form" action="#" autocomplete="off" novalidate>
                       <div role="group">
-                         <div class="form-field">
-                            <label class="form-label" for="name">Имя</label>
-                            <input class="form-input" type="text" id="name">
-                            <svg class="modal-icons">
+                         <div class="form__field">
+                            <label class="form__label" for="name">Имя</label>
+                            <input class="form__input" type="text" id="name">
+                            <svg class="form__icons">
                                 <use href="./images/symbol-defs.svg#icon-person-black"></use>
                             </svg>
                         </div>
-                            <div class="form-field">
-                            <label class="form-label" for="tel">Телефон</label>
-                            <input class="form-input" type="tel" id="tel">
-                            <svg class="modal-icons">
+                            <div class="form__field">
+                            <label class="form__label" for="tel">Телефон</label>
+                            <input class="form__input" type="tel" id="tel">
+                            <svg class="form__icons">
                                 <use href="./images/symbol-defs.svg#icon-phone-black"></use>
                             </svg>
                         </div>
-                        <div class="form-field">
-                            <label class="form-label" for="email">Почта</label>
-                            <input class="form-input" type="text" id="email">
-                            <svg class="modal-icons">
+                        <div class="form__field">
+                            <label class="form__label" for="email">Почта</label>
+                            <input class="form__input" type="text" id="email">
+                            <svg class="form__icons">
                                 <use href="./images/symbol-defs.svg#icon-email-black"></use>
                             </svg>
                         </div>
                         <div>
-                            <label class="form-label" for="comments">Комментарий</label>
-                            <textarea  class="comments" name="comments" id="comments" placeholder="Введите текст"></textarea>
+                            <label class="form__label" for="comments">Комментарий</label>
+                            <textarea  class="form__comments" name="comments" id="comments" placeholder="Введите текст"></textarea>
                         </div> 
                     </div>
-                    <div class="form-agree">
-                        <input class="form-checkbox" type="checkbox" id="agree">
-                        <label class="agree" for="agree">Соглашаюсь с рассылкой и принимаю 
+                    <div>
+                        <input class="form__checkbox" type="checkbox" id="agree">
+                        <label class="form__agreement" for="agree">Соглашаюсь с рассылкой и принимаю 
                             <span>
-                                <a class="conditions" href="">Условия договора</a>
+                                <a class="form__conditions" href="">Условия договора</a>
                             </span>
                         </label>
                     </div>
-                    <button class="submit" type="submit">Отправить</button>
+                    <button class="form__submit-button" type="submit">Отправить</button>
                     </form>
                 </div>
             </div>
