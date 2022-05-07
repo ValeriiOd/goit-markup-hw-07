@@ -614,17 +614,23 @@ margin-right: 10px;
     background-color: var(--background-color);
     display: flex;
 } 
-.footer .box {
+.footer-style {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.footer .logo {
+.footer__logo {
     display: block;
     margin-bottom: 20px;
+    text-decoration: none;
+    font-family: Raleway, cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--accent-color-text);
 }
-.footer .adress {
+.footer__adress {
     display:block;
     font-style: normal;
     font-size: 14px;
@@ -633,7 +639,7 @@ margin-right: 10px;
     margin-bottom: 9px;
     
 }
-.footer .contacts {
+.footer__contacts {
     font-weight: 400;
     display: block;
     font-size: 14px;
@@ -641,10 +647,10 @@ margin-right: 10px;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.6);
 }
-.footer .contacts + .contacts{
+.footer__contacts + .footer__contacts{
     margin-top: 9px;
 }
-.footer-link {
+.footer-socials__link {
     display:inline-block;
     padding: 12px;
     width:44px ;
@@ -653,7 +659,7 @@ margin-right: 10px;
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer .tittle {
+.footer-socials__tittle {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 1.14;
@@ -661,21 +667,23 @@ margin-right: 10px;
     color: var(--additional-color);
     margin-bottom: 20px;
 }
-.footer-link:hover,
-.footer-link:focus {
+.footer-socials__link:hover,
+.footer-socials__link:focus {
     background-color:var(--accent-color-text);
 }
-.footer-icon {
+.footer-socials__icon {
     width: 20px;
     height: 20px;
     fill: var(--additional-color);
 }
-.add-socials {
+.footer-socials {
     display: block;
     margin-left: 70px;
     margin-top: 12px;
 }
-.footer .box {
+.footer-socials__list {
+    list-style: none;
+    padding-left: 0;
     display: flex;
     flex-direction: row;
 }
@@ -716,10 +724,7 @@ margin-right: 10px;
 
     color: var(--additional-color);
     text-decoration: none;
-    cursor: pointer;
-
-
-   
+    cursor: pointer; 
 }
 .subscribe::after {
     content: '';
@@ -746,7 +751,8 @@ margin-right: 10px;
 
     color: rgba(255, 255, 255, 0.6);
 }
-/* portfolio main contant */
+
+                /* portfolio main contant */
 .header-border{
     border-style: solid;
     border-width: 0 0 1px 0;
@@ -758,13 +764,13 @@ margin-right: 10px;
     list-style-type: none;
     padding-left: 0;
 }
-.cards .categories {
+.cards__categories {
     color: var(--secondary-color-text) ;
     font-size: 16px;
     line-height: 1.9;
     margin-left: 24px;
 }
-.cards .tittle {
+.cards__tittle {
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
@@ -777,26 +783,25 @@ margin-right: 10px;
     padding-top: 94px;
     padding-bottom: 94px ;
 }
-.cards .item {
-    border-color: #eeeeee;
+.project-name {
     padding-top: 20px ;
     padding-bottom: 20px;
     border: 1px solid #EEEEEE;
-    border-top: 0;
+    border-top: transparent;
 }
 
-.cards .style{
+.cards__item{
     margin-right: 30px;
     margin-bottom: 30px;
     background: var(--additional-color);
     
     box-sizing: border-box;
 }
-.cards .box {
+.cards__box {
     position: relative;
     overflow: hidden;
 }
-.overlay {
+.cards__overlay {
     position: absolute;
     padding: 63px 24px;
     top: 0;
@@ -807,28 +812,28 @@ margin-right: 10px;
     transform: translatey(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.overlay > p {
+.cards__overlay > p {
    
     font-size: 18px;
     line-height: 1.6;
 
     color:var(--additional-color);
 }
-.cards .style:nth-child(3n){
+.cards__item:nth-child(3n){
     margin-right: 0;
 }
-.cards .style:nth-last-child(-n + 3) {
+.cards__item:nth-last-child(-n + 3) {
     margin-bottom: 0;
 }
-.cards .style:hover,
-.cards .style:focus {
+.cards__item:hover,
+.cards__item:focus {
     box-shadow:
     0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
 }
-.cards .style:hover .overlay {
+.cards__item:hover .cards__overlay {
      transform: translateY(0);
 }
 /* buttons header */
