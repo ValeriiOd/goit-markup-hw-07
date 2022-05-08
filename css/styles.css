@@ -49,7 +49,7 @@ ul {
 .logo-color-footer {
     color: var(--additional-color);
 }
-.contacts{
+.contacts-header__style {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -58,30 +58,30 @@ ul {
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-style {
+.contacts-header {
     list-style-type: none;
     padding-left: 0;
     display:flex;
     margin-left: auto;
 }
 
-.contacts__mail{
+.contacts-header__mail-icon{
     margin-right: 10px;
     width: 16px;
     height: 12px;
     fill: currentColor;
 }
-.contacts__phone{
+.contacts-header__phone-icon{
     margin-right: 10px;
     width: 10px;
     height: 16px;
     fill: currentColor;
 }
-.contacts-style__item + .contacts-style__item {
+.contacts-header__item + .contacts-header__item {
    margin-left: 50px;
 }
-.contacts:hover,
-.contacts:focus{
+.contacts-header__style:hover,
+.contacts-header__style:focus{
     color:var(--accent-color-text);
 }
 .hero {
@@ -691,7 +691,7 @@ margin-right: 10px;
     margin-left: auto;
     margin-top: 12px;
 }
-.legend-footer {
+.form-footer__header {
 
     font-weight: 700;
     font-size: 14px;
@@ -702,7 +702,7 @@ margin-right: 10px;
 
     color:var(--additional-color);
 }
-.subscribe {
+.form-footer__subscribe {
     display: inline-flex;
     align-items: center;
 
@@ -726,7 +726,7 @@ margin-right: 10px;
     text-decoration: none;
     cursor: pointer; 
 }
-.subscribe::after {
+.form-footer__subscribe::after {
     content: '';
     width: 24px;
     height: 24px;
@@ -734,7 +734,7 @@ margin-right: 10px;
     background-image: url('../images/icon-send.svg');
     background-size: contain;
 }
-.your-email {
+.form-footer__email {
     width: 358px;
     height: 50px;
     padding: 15px 16px;
@@ -745,7 +745,7 @@ margin-right: 10px;
     background-color: var(--background-color);
     color: var(--additional-color);
 }
-.your-email::placeholder {
+.form-footer__email::placeholder {
     font-size: 16px;
     line-height: 1.25;
 
@@ -837,7 +837,7 @@ margin-right: 10px;
      transform: translateY(0);
 }
 /* buttons header */
-.button {
+.buttons {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -845,10 +845,10 @@ margin-right: 10px;
     padding-left: 0;
 
 }
-.button .item + .item {
+.buttons__item + .buttons__item {
     margin-left: 8px;
 }
-.button .nav {
+.buttons__nav {
     font-size: 16px;
     line-height: 1.62;
     color: var(--main-color-text);
@@ -866,8 +866,8 @@ margin-right: 10px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav:focus,
-.nav:hover {
+.buttons__nav:focus,
+.buttons__nav:hover {
     color: var(--additional-color);
     background-color: var(--accent-color-text);
 }
